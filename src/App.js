@@ -3,7 +3,7 @@ import './App.css';
 
 function App() {
   return (
-    <div className="App">
+    <div className="flex flex-col items-center mt-16 bg-black">
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
