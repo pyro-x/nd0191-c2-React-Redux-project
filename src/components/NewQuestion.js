@@ -1,9 +1,11 @@
 import { useState } from 'react';
-import { useDispatch } from 'react-redux';
 import { connect } from 'react-redux';
+import { useNavigate } from 'react-router-dom';
 
 import { handleAddQuestion } from '../actions/questions';
 const NewQuestion = ({dispatch, authedUser}) => {
+
+    const navigate = useNavigate();
 
     let [optionOne, setOptionOne] = useState('');
     let [optionTwo, setOptionTwo] = useState('');
@@ -17,6 +19,7 @@ const NewQuestion = ({dispatch, authedUser}) => {
             optionTwoText: optionTwo,
             author: authedUser
         }));
+        navigate ("/");
     };
 
     const handleOptionOneChange = (e) => {
