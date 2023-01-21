@@ -11,10 +11,10 @@ const LeaderBoard = ({usersWithScore}) => {
                 {
                     usersWithScore.sort((a,b) => b.score - a.score).map((user) => {
                         return (
-                                <div key={user.id} className="grid grid-flow-row grid-cols-3 gap-4 boder divide-x">
+                                <div key={user.id} data-testid="user-row" className="grid grid-flow-row grid-cols-3 gap-4 boder divide-x">
                                     <div className="p-2 flex items-center"><img src={user.avatarURL} alt="avatar" className="w-10 h-10 rounded-full pr-2" />{user.name}</div>
-                                    <div className="p-2 flex items-center">{user.answeredQuestions}</div>
-                                    <div className="p-2 flex items-center">{user.createdQuestions}</div>
+                                    <div className="p-2 flex items-center" data-testid="nquestion-answered">{user.answeredQuestions}</div>
+                                    <div className="p-2 flex items-center" data-testid="nquestion-created">{user.createdQuestions}</div>
                                 </div>
                         )
                     })

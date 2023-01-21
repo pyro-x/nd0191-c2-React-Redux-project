@@ -1,7 +1,6 @@
-/* eslint-disable testing-library/prefer-screen-queries */
 
 import * as React from 'react';
-import {  render } from '@testing-library/react';
+import {  render , screen} from '@testing-library/react';
 
 import reducer from "../reducers";
 import { Provider } from 'react-redux';
@@ -56,11 +55,11 @@ describe ('NavBar', () => {
                 </Provider>
             </MemoryRouter>
             );
-        expect(view.getAllByRole('link')).toHaveLength(3);
+        expect(screen.getAllByRole('link')).toHaveLength(3);
 
-        expect (view.getByTestId("home-lnk")).toBeInTheDocument();
-        expect (view.getByTestId("add-lnk")).toBeInTheDocument();
-        expect (view.getByTestId("leaderboard-lnk")).toBeInTheDocument();
+        expect (screen.getByTestId("home-lnk")).toBeInTheDocument();
+        expect (screen.getByTestId("add-lnk")).toBeInTheDocument();
+        expect (screen.getByTestId("leaderboard-lnk")).toBeInTheDocument();
     });
 
     it ('contains a logout button', () => {
@@ -71,7 +70,7 @@ describe ('NavBar', () => {
                 </Provider>
             </MemoryRouter>
             );
-        expect(view.getByTestId("logout-btn")).toBeInTheDocument();
+        expect(screen.getByTestId("logout-btn")).toBeInTheDocument();
 
     });
 

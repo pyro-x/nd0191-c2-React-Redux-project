@@ -29,6 +29,7 @@ Object {
         </div>
         <div
           class="grid grid-flow-row grid-cols-3 gap-4 boder divide-x"
+          data-testid="user-row"
         >
           <div
             class="p-2 flex items-center"
@@ -42,17 +43,20 @@ Object {
           </div>
           <div
             class="p-2 flex items-center"
+            data-testid="nquestion-answered"
           >
             4
           </div>
           <div
             class="p-2 flex items-center"
+            data-testid="nquestion-created"
           >
             2
           </div>
         </div>
         <div
           class="grid grid-flow-row grid-cols-3 gap-4 boder divide-x"
+          data-testid="user-row"
         >
           <div
             class="p-2 flex items-center"
@@ -66,11 +70,13 @@ Object {
           </div>
           <div
             class="p-2 flex items-center"
+            data-testid="nquestion-answered"
           >
             2
           </div>
           <div
             class="p-2 flex items-center"
+            data-testid="nquestion-created"
           >
             2
           </div>
@@ -103,6 +109,7 @@ Object {
       </div>
       <div
         class="grid grid-flow-row grid-cols-3 gap-4 boder divide-x"
+        data-testid="user-row"
       >
         <div
           class="p-2 flex items-center"
@@ -116,17 +123,20 @@ Object {
         </div>
         <div
           class="p-2 flex items-center"
+          data-testid="nquestion-answered"
         >
           4
         </div>
         <div
           class="p-2 flex items-center"
+          data-testid="nquestion-created"
         >
           2
         </div>
       </div>
       <div
         class="grid grid-flow-row grid-cols-3 gap-4 boder divide-x"
+        data-testid="user-row"
       >
         <div
           class="p-2 flex items-center"
@@ -140,11 +150,13 @@ Object {
         </div>
         <div
           class="p-2 flex items-center"
+          data-testid="nquestion-answered"
         >
           2
         </div>
         <div
           class="p-2 flex items-center"
+          data-testid="nquestion-created"
         >
           2
         </div>

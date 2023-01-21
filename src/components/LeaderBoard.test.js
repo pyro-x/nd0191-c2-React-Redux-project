@@ -1,6 +1,6 @@
 
 import * as React from 'react';
-import {  render } from '@testing-library/react';
+import {  render, screen } from '@testing-library/react';
 
 import reducer from "../reducers";
 import { Provider } from 'react-redux';
@@ -55,6 +55,27 @@ describe ('LeaderBoard', () => {
             </MemoryRouter>
             );
         expect(view).toMatchSnapshot()
+    });
+
+
+    it('render two users', () => {
+        const view = render(
+            <MemoryRouter>
+                <Provider store={store}>
+                    <LeaderBoard/>
+                </Provider>
+            </MemoryRouter>
+        );
+
+        expect(screen.getAllByTestId('user-row')).toHaveLength(2);
+
+        expect(screen.getAllByTestId('user-row')[0]).toHaveTextContent('Sarah Edo');
+        expect(screen.getAllByTestId('user-row')[1]).toHaveTextContent('Tyler McGinnis');
+
+        expect(screen.getAllByTestId('nquestion-answered')[0]).toHaveTextContent('4');
+        expect(screen.getAllByTestId('nquestion-created')[0]).toHaveTextContent('2');
+
+
     });
 });
     
