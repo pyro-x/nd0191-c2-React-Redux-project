@@ -14,3 +14,21 @@ This project is my implemantaion for the *Employee Polls Web App* from Udacity's
 
 - To run tests just execute `npm test`from the project main directory
 
+
+## How to log in 
+
+To be able to use the app you have to log in using one of the users created, just choose one from the user drop down and enter the corresponding password
+
+
+| User   |      Name      |  Password |
+|----------|:-------------|--------|
+| sarahedo |  Sarah Edo | password123 |
+| tylermcginnis |    Tyler McGinnis   |   abc321 |
+| mtsamis | Mike Tsamis |   xyz123 |
+| zoshikanlu | Zenobia Oshikanlu |   pass246 |
+
+
+
+
+
+
