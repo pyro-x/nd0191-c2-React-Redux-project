@@ -15,7 +15,7 @@ Object {
             alt="Mistery Avatar"
             class="w-32 h-32 self-center"
             data-testid="user-img"
-            src="https://upload.wikimedia.org/wikipedia/commons/5/59/User-avatar.svg"
+            src="unknown-avatar.svg"
           />
           <div
             class="flex justify-between items-baseline"
@@ -82,7 +82,7 @@ Object {
           alt="Mistery Avatar"
           class="w-32 h-32 self-center"
           data-testid="user-img"
-          src="https://upload.wikimedia.org/wikipedia/commons/5/59/User-avatar.svg"
+          src="unknown-avatar.svg"
         />
         <div
           class="flex justify-between items-baseline"

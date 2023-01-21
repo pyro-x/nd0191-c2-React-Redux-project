@@ -11,7 +11,7 @@ const Login = (props) => {
     let [password, setPassword] = useState('');
     let [errorMsg, setErrorMsg] = useState('');
 
-    let [avatar, setAvatar] = useState('https://upload.wikimedia.org/wikipedia/commons/5/59/User-avatar.svg');
+    let [avatar, setAvatar] = useState('unknown-avatar.svg');
     const navigate =useNavigate();
 
     const handleSubmit = (e) => {
