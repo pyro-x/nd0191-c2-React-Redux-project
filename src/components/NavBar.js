@@ -6,7 +6,6 @@ import { setAuthedUser } from '../actions/authedUser';
 
 
 const NavBar = (props) => {
-    console.log ("navbar props", props);
     const location = useLocation();
     const navigate = useNavigate();
     const {authedUser} = props;
@@ -19,19 +18,18 @@ const NavBar = (props) => {
         
     }
 
-    console.log ("location", location);
     return (
         <nav className='flex justify-between px-4 pt-4  pb-2 border-b-2 mt-2 shadow'>
             <ul className="flex space-x-2">
 
                 <li className={location.pathname === "/" ? "border-b-4":""}>
-                    <Link to="/">Home</Link>
+                    <Link to="/" data-testid="home-lnk" >Home</Link>
                 </li>
                 <li className={location.pathname === "/leaderboard" ? "border-b-4":""}>
-                    <Link to="/leaderboard">Leader board</Link>
+                    <Link to="/leaderboard" data-testid="leaderboard-lnk" >Leader board</Link>
                 </li>
                 <li className={location.pathname === "/add" ? "border-b-4":""}>
-                    <Link to="/add">New</Link>
+                    <Link to="/add" data-testid="add-lnk" >New</Link>
                 </li>
             </ul>
             
@@ -48,7 +46,7 @@ const NavBar = (props) => {
                             </div>
                         </li>
                         <li>
-                            <div onClick={handleLogout}>Logout</div>
+                            <div className="cursor-pointer" data-testid="logout-btn" onClick={handleLogout}>Logout</div>
                         </li>
                     </ul>
                     ) : (

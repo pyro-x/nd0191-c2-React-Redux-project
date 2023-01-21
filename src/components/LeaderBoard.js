@@ -23,10 +23,7 @@ const LeaderBoard = ({usersWithScore}) => {
     )
 }
 
-const mapStateToProps = ({ users , questions}) => {
-    console.log ("leaderboard users", users);
-    console.log ("leaderboard questions", questions);
-
+const mapStateToProps = ({ users }) => {
     const  usersWithScore = Object.values(users).map((user) => {
 
         const answeredQuestions = Object.keys(user.answers).length;
@@ -37,7 +34,6 @@ const mapStateToProps = ({ users , questions}) => {
         return {...user, answeredQuestions, createdQuestions, score} ;
         
     });
-    console.log ("usersWithScore", usersWithScore);
 
     return {
         usersWithScore

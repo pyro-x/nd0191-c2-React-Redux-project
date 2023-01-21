@@ -1,0 +1,206 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`LeaderBoard renders correctly 1`] = `
+Object {
+  "asFragment": [Function],
+  "baseElement": <body>
+    <div>
+      <div
+        class="border"
+      >
+        <div
+          class="grid grid-flow-row grid-cols-3 gap-3 bg-blue-200 border divide-x"
+        >
+          <div
+            class="p-2"
+          >
+            Name
+          </div>
+          <div
+            class="p-2"
+          >
+            Answered
+          </div>
+          <div
+            class="p-2"
+          >
+            Created
+          </div>
+        </div>
+        <div
+          class="grid grid-flow-row grid-cols-3 gap-4 boder divide-x"
+        >
+          <div
+            class="p-2 flex items-center"
+          >
+            <img
+              alt="avatar"
+              class="w-10 h-10 rounded-full pr-2"
+              src="https://api.dicebear.com/5.x/avataaars/svg?seed=sarahedo&style=circle"
+            />
+            Sarah Edo
+          </div>
+          <div
+            class="p-2 flex items-center"
+          >
+            4
+          </div>
+          <div
+            class="p-2 flex items-center"
+          >
+            2
+          </div>
+        </div>
+        <div
+          class="grid grid-flow-row grid-cols-3 gap-4 boder divide-x"
+        >
+          <div
+            class="p-2 flex items-center"
+          >
+            <img
+              alt="avatar"
+              class="w-10 h-10 rounded-full pr-2"
+              src="https://api.dicebear.com/5.x/avataaars/svg?seed=tylermcginnis&style=circle"
+            />
+            Tyler McGinnis
+          </div>
+          <div
+            class="p-2 flex items-center"
+          >
+            2
+          </div>
+          <div
+            class="p-2 flex items-center"
+          >
+            2
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>,
+  "container": <div>
+    <div
+      class="border"
+    >
+      <div
+        class="grid grid-flow-row grid-cols-3 gap-3 bg-blue-200 border divide-x"
+      >
+        <div
+          class="p-2"
+        >
+          Name
+        </div>
+        <div
+          class="p-2"
+        >
+          Answered
+        </div>
+        <div
+          class="p-2"
+        >
+          Created
+        </div>
+      </div>
+      <div
+        class="grid grid-flow-row grid-cols-3 gap-4 boder divide-x"
+      >
+        <div
+          class="p-2 flex items-center"
+        >
+          <img
+            alt="avatar"
+            class="w-10 h-10 rounded-full pr-2"
+            src="https://api.dicebear.com/5.x/avataaars/svg?seed=sarahedo&style=circle"
+          />
+          Sarah Edo
+        </div>
+        <div
+          class="p-2 flex items-center"
+        >
+          4
+        </div>
+        <div
+          class="p-2 flex items-center"
+        >
+          2
+        </div>
+      </div>
+      <div
+        class="grid grid-flow-row grid-cols-3 gap-4 boder divide-x"
+      >
+        <div
+          class="p-2 flex items-center"
+        >
+          <img
+            alt="avatar"
+            class="w-10 h-10 rounded-full pr-2"
+            src="https://api.dicebear.com/5.x/avataaars/svg?seed=tylermcginnis&style=circle"
+          />
+          Tyler McGinnis
+        </div>
+        <div
+          class="p-2 flex items-center"
+        >
+          2
+        </div>
+        <div
+          class="p-2 flex items-center"
+        >
+          2
+        </div>
+      </div>
+    </div>
+  </div>,
+  "debug": [Function],
+  "findAllByAltText": [Function],
+  "findAllByDisplayValue": [Function],
+  "findAllByLabelText": [Function],
+  "findAllByPlaceholderText": [Function],
+  "findAllByRole": [Function],
+  "findAllByTestId": [Function],
+  "findAllByText": [Function],
+  "findAllByTitle": [Function],
+  "findByAltText": [Function],
+  "findByDisplayValue": [Function],
+  "findByLabelText": [Function],
+  "findByPlaceholderText": [Function],
+  "findByRole": [Function],
+  "findByTestId": [Function],
+  "findByText": [Function],
+  "findByTitle": [Function],
+  "getAllByAltText": [Function],
+  "getAllByDisplayValue": [Function],
+  "getAllByLabelText": [Function],
+  "getAllByPlaceholderText": [Function],
+  "getAllByRole": [Function],
+  "getAllByTestId": [Function],
+  "getAllByText": [Function],
+  "getAllByTitle": [Function],
+  "getByAltText": [Function],
+  "getByDisplayValue": [Function],
+  "getByLabelText": [Function],
+  "getByPlaceholderText": [Function],
+  "getByRole": [Function],
+  "getByTestId": [Function],
+  "getByText": [Function],
+  "getByTitle": [Function],
+  "queryAllByAltText": [Function],
+  "queryAllByDisplayValue": [Function],
+  "queryAllByLabelText": [Function],
+  "queryAllByPlaceholderText": [Function],
+  "queryAllByRole": [Function],
+  "queryAllByTestId": [Function],
+  "queryAllByText": [Function],
+  "queryAllByTitle": [Function],
+  "queryByAltText": [Function],
+  "queryByDisplayValue": [Function],
+  "queryByLabelText": [Function],
+  "queryByPlaceholderText": [Function],
+  "queryByRole": [Function],
+  "queryByTestId": [Function],
+  "queryByText": [Function],
+  "queryByTitle": [Function],
+  "rerender": [Function],
+  "unmount": [Function],
+}
+`;

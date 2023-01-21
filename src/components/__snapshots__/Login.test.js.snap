@@ -1,0 +1,192 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Login renders correctly 1`] = `
+Object {
+  "asFragment": [Function],
+  "baseElement": <body>
+    <div>
+      <div
+        class="border shadow-md"
+      >
+        <form
+          class="flex flex-col space-y-4 m-4"
+        >
+          <img
+            alt="Mistery Avatar"
+            class="w-32 h-32 self-center"
+            data-testid="user-img"
+            src="https://upload.wikimedia.org/wikipedia/commons/5/59/User-avatar.svg"
+          />
+          <div
+            class="flex justify-between items-baseline"
+          >
+            <div
+              class="pr-2"
+            >
+              User
+            </div>
+            <select
+              class="w-64"
+              data-testid="user-select"
+              id="users"
+              name="users"
+            >
+              <option
+                value=""
+              >
+                Please Select a user
+              </option>
+              <option
+                value="sarahedo"
+              >
+                Sarah Edo
+              </option>
+            </select>
+          </div>
+          <div
+            class="flex justify-between items-baseline"
+          >
+            <div
+              class="pr-2"
+            >
+              Password
+            </div>
+            <input
+              class="w-64"
+              data-testid="password-input"
+              placeholder="password"
+              type="password"
+              value=""
+            />
+          </div>
+          <button
+            class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded mt-8 disabled:opacity-50"
+            data-testid="submit-button"
+            disabled=""
+            type="submit"
+          >
+            Login
+          </button>
+        </form>
+      </div>
+    </div>
+  </body>,
+  "container": <div>
+    <div
+      class="border shadow-md"
+    >
+      <form
+        class="flex flex-col space-y-4 m-4"
+      >
+        <img
+          alt="Mistery Avatar"
+          class="w-32 h-32 self-center"
+          data-testid="user-img"
+          src="https://upload.wikimedia.org/wikipedia/commons/5/59/User-avatar.svg"
+        />
+        <div
+          class="flex justify-between items-baseline"
+        >
+          <div
+            class="pr-2"
+          >
+            User
+          </div>
+          <select
+            class="w-64"
+            data-testid="user-select"
+            id="users"
+            name="users"
+          >
+            <option
+              value=""
+            >
+              Please Select a user
+            </option>
+            <option
+              value="sarahedo"
+            >
+              Sarah Edo
+            </option>
+          </select>
+        </div>
+        <div
+          class="flex justify-between items-baseline"
+        >
+          <div
+            class="pr-2"
+          >
+            Password
+          </div>
+          <input
+            class="w-64"
+            data-testid="password-input"
+            placeholder="password"
+            type="password"
+            value=""
+          />
+        </div>
+        <button
+          class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded mt-8 disabled:opacity-50"
+          data-testid="submit-button"
+          disabled=""
+          type="submit"
+        >
+          Login
+        </button>
+      </form>
+    </div>
+  </div>,
+  "debug": [Function],
+  "findAllByAltText": [Function],
+  "findAllByDisplayValue": [Function],
+  "findAllByLabelText": [Function],
+  "findAllByPlaceholderText": [Function],
+  "findAllByRole": [Function],
+  "findAllByTestId": [Function],
+  "findAllByText": [Function],
+  "findAllByTitle": [Function],
+  "findByAltText": [Function],
+  "findByDisplayValue": [Function],
+  "findByLabelText": [Function],
+  "findByPlaceholderText": [Function],
+  "findByRole": [Function],
+  "findByTestId": [Function],
+  "findByText": [Function],
+  "findByTitle": [Function],
+  "getAllByAltText": [Function],
+  "getAllByDisplayValue": [Function],
+  "getAllByLabelText": [Function],
+  "getAllByPlaceholderText": [Function],
+  "getAllByRole": [Function],
+  "getAllByTestId": [Function],
+  "getAllByText": [Function],
+  "getAllByTitle": [Function],
+  "getByAltText": [Function],
+  "getByDisplayValue": [Function],
+  "getByLabelText": [Function],
+  "getByPlaceholderText": [Function],
+  "getByRole": [Function],
+  "getByTestId": [Function],
+  "getByText": [Function],
+  "getByTitle": [Function],
+  "queryAllByAltText": [Function],
+  "queryAllByDisplayValue": [Function],
+  "queryAllByLabelText": [Function],
+  "queryAllByPlaceholderText": [Function],
+  "queryAllByRole": [Function],
+  "queryAllByTestId": [Function],
+  "queryAllByText": [Function],
+  "queryAllByTitle": [Function],
+  "queryByAltText": [Function],
+  "queryByDisplayValue": [Function],
+  "queryByLabelText": [Function],
+  "queryByPlaceholderText": [Function],
+  "queryByRole": [Function],
+  "queryByTestId": [Function],
+  "queryByText": [Function],
+  "queryByTitle": [Function],
+  "rerender": [Function],
+  "unmount": [Function],
+}
+`;

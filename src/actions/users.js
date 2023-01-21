@@ -24,7 +24,6 @@ export function addVote({ authedUser, qid, answer }) {
 
 export function addQuestion ({ authedUser , qid}) {
 
-  console.log ("user addQuestion", authedUser, qid);
   return {
       type: ADD_QUESTION,
       authedUser,

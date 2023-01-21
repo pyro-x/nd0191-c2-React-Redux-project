@@ -16,7 +16,6 @@ const Login = (props) => {
 
     const handleSubmit = (e) => {
         e.preventDefault();
-
         if (username === '' || password === '') {
             setErrorMsg('Please enter a username and password');
             return;
@@ -46,10 +45,10 @@ const Login = (props) => {
     return (
         <div className='border shadow-md'>
             <form className='flex flex-col space-y-4 m-4' onSubmit={handleSubmit}>
-                <img src={avatar} alt='Mistery avatar' className='w-32 h-32 self-center' />
+                <img src={avatar} alt={username ? username : 'Mistery Avatar'}  data-testid="user-img" className='w-32 h-32 self-center' />
                 <div className='flex justify-between items-baseline'>
                     <div className="pr-2">User</div> 
-                    <select className="w-64" name="users" id="users" onChange={handleUserNameChange}>
+                    <select className="w-64" name="users" id="users" data-testid="user-select"  value={username} onChange={handleUserNameChange}>
                         <option  value="" defaultValue="a">Please Select a user</option>
                         {
                             users.map((user) => (
@@ -60,10 +59,10 @@ const Login = (props) => {
                 </div>
                 <div className='flex justify-between items-baseline'>
                     <div className='pr-2'>Password</div> 
-                    <input className="w-64" type="password" placeholder="password"  onChange={handlePaswordChange}/>
+                    <input className="w-64" type="password" placeholder="password"  data-testid="password-input" onChange={handlePaswordChange} value={password}/>
                 </div>
-            { errorMsg !=='' && <div className="text-red-500 text-sm text-right">{errorMsg}</div>}
-                <button   type="submit" className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded mt-8 disabled:opacity-50" disabled={username === ""}>Login</button>
+            { errorMsg !=='' && <div className="text-red-500 text-sm text-right" data-testid="error-msg">{errorMsg}</div>}
+                <button   type="submit" className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded mt-8 disabled:opacity-50" disabled={username === ""} data-testid="submit-button">Login</button>
 
             </form>
         </div>

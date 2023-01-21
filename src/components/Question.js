@@ -12,7 +12,6 @@ const Question = ({dispatch, question, author, id, authedUser}) => {
     const navigate = useNavigate();
     const handleVote = (value) => {
 
-        console.log("value:", value);
         dispatch (handleVoteQuestion({
             qid: id,
             authedUser,
@@ -23,7 +22,6 @@ const Question = ({dispatch, question, author, id, authedUser}) => {
 
     }
     useEffect (() => {
-        console.log ("use effect question", question);
         if (question === undefined) {
             navigate ("/404");
         }
@@ -38,24 +36,24 @@ const Question = ({dispatch, question, author, id, authedUser}) => {
     const votesB = question && question.optionTwo.votes.length;
 
     return question && (
-        <div className="flex flex-col gap-8 items-center border shadow-md p-4">
+        <div className="flex flex-col gap-8 items-center border shadow-md p-4 w-1/2">
             <div>Poll by {author.name}</div>
             <img src={author.avatarURL} alt={author.name} className='w-32 h-32' />
             {!isAnswered ? (
-            <div className="flex flex-col items-center gap-8">
+            <div className="flex flex-col items-center gap-8 w-full">
                 <div >Would you rather</div>
-                <div className='flex gap-4'>
+                <div className='flex gap-4 w-full'>
                     <QuestionOption optionText={question.optionOne.text}  optionValue='optionOne' onOptionClick={handleVote}/>
                     <QuestionOption optionText={question.optionTwo.text}  optionValue='optionTwo' onOptionClick={handleVote}/>
                 </div>
             </div>
             ) : (
                 
-                <div className="flex flex-col items-center gap-8">
+                <div className="flex flex-col items-center gap-8 w-full">
                     <div >Results</div>
-                    <div className='flex gap-4'>
-                        <QuestionResult optionText={question.optionOne.text} votes={votesA} percentage={votesAPercentage} winner={votesAPercentage>votesBPercentage}/>
-                        <QuestionResult optionText={question.optionTwo.text} votes={votesB} percentage={votesBPercentage} winner={votesBPercentage>votesAPercentage}/>
+                    <div className='flex gap-4 w-full'>
+                        <QuestionResult optionText={question.optionOne.text} votes={votesA} percentage={votesAPercentage} winner={votesAPercentage>votesBPercentage} chosen={question.optionOne.votes.includes(authedUser)}/>
+                        <QuestionResult optionText={question.optionTwo.text} votes={votesB} percentage={votesBPercentage} winner={votesBPercentage>votesAPercentage} chosen={question.optionTwo.votes.includes(authedUser)}/>
                     </div>
                 </div>
             )}

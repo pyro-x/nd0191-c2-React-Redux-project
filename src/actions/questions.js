@@ -17,10 +17,8 @@ export function receiveQuestions(questions) {
 
 export function handleVoteQuestion (info) {
 
-    console.log ("handleVoteQuestion", info);
     return (dispatch) => {
         return saveQuestionAnswer(info).then((question) => {
-            console.log ("new formatted question", question);
             dispatch(voteQuestion(info))
             dispatch(addVote(info)) 
 
@@ -44,9 +42,7 @@ function voteQuestion({ authedUser, qid, answer }) {
 export function handleSaveQuestion (info) {
     return (dispatch) => {
 
-        console.log ("handleAddQuestion", info);
        return saveQuestion(info).then((question) => {
-                console.log ("new formatted question", question);
                  dispatch(addQuestion({
                                     author: question.author,
                                     question: {...question}

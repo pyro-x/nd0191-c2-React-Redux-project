@@ -15,7 +15,6 @@ import { useNavigate , useLocation} from 'react-router-dom'
 function App(props) {
 
 
-  console.log ("app props", props);
   const navigate = useNavigate();
   const location = useLocation();
 

@@ -4,7 +4,7 @@ const QuestionCard = ({question}) => {
   const formatedDate = new Date(question.timestamp).toLocaleString();
 
   return (
-    <div className="flex flex-col gap-2 border p-4 place-items-center">
+    <div className="flex flex-col gap-2 border p-4 place-items-center w-48">
         <div>{question.author}</div>
         <div>{formatedDate}</div>
         <hr/>

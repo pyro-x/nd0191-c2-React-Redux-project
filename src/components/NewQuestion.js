@@ -2,7 +2,7 @@ import { useState } from 'react';
 import { connect } from 'react-redux';
 import { useNavigate } from 'react-router-dom';
 
-import { handleAddQuestion } from '../actions/questions';
+import { handleSaveQuestion } from '../actions/questions';
 const NewQuestion = ({dispatch, authedUser}) => {
 
     const navigate = useNavigate();
@@ -13,7 +13,7 @@ const NewQuestion = ({dispatch, authedUser}) => {
     const handleSubmit = (e) => {
         e.preventDefault();
         
-        dispatch(handleAddQuestion(
+        dispatch(handleSaveQuestion(
             {
             optionOneText: optionOne, 
             optionTwoText: optionTwo,
