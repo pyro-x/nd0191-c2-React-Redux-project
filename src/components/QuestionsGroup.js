@@ -4,9 +4,9 @@ const QuestionsGroup = ({ questionsNew , questionsOld, group }) => {
     const questions = (group === 'new') ? questionsNew : questionsOld;
 
     return (
-        <div className="flex flex-col border shadow-md gap-4">
-            <div className="border w-full text-center">{group === 'new'? 'New Questions': 'Done'}</div>
-            <div className="p-4 border flex gap-4 w-full flex-wrap">
+        <div className="flex flex-col border shadow-md gap-2 rounded-md">
+            <div className="border-b p-2 w-full text-center">{group === 'new'? 'New Questions': 'Done'}</div>
+            <div className="px-4 py-4 flex gap-4 w-full flex-wrap">
         
                 {
                     questions.length === 0 ? <div className="place-self-center">No more new questions currently available</div> :

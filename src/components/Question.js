@@ -36,7 +36,7 @@ const Question = ({dispatch, question, author, id, authedUser}) => {
     const votesB = question && question.optionTwo.votes.length;
 
     return question && (
-        <div className="flex flex-col gap-8 items-center border shadow-md p-4 w-1/2">
+        <div className="flex flex-col gap-8 items-center border shadow-md p-4 w-1/2 rounded-md">
             <div>Poll by {author.name}</div>
             <img src={author.avatarURL} alt={author.name} className='w-32 h-32' />
             {!isAnswered ? (
