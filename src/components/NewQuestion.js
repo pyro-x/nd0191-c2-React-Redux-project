@@ -38,13 +38,13 @@ const NewQuestion = ({dispatch, authedUser}) => {
             <div className="text-l self-center">Create a new Poll</div>
             <div className="flex justify-between items-baseline gap-4 pt-4">
                 <label>First Option</label>
-                <input className="w-96" type="text" placeholder="Option One" onChange={handleOptionOneChange} />
+                <input className="w-96" type="text" placeholder="Option One" maxLength="50" onChange={handleOptionOneChange} />
             </div>
             <div className="flex justify-between items-baseline gap-4 pb-4">
                 <label>Second Option</label>
-                <input className="w-96" type="text" placeholder="Option Two" onChange={handleOptionTwoChange}/>
+                <input className="w-96" type="text" placeholder="Option Two" maxLength="50" onChange={handleOptionTwoChange}/>
             </div>
-            <button className="bg-green-500 hover:bg-green-700 border shadow-md text-white p-2 rounded-md disabled:opacity-50" disabled={optionOne === "" && optionTwo===""}>Submit</button>
+            <button className="bg-green-500 hover:bg-green-700 border shadow-md text-white p-2 rounded-md disabled:opacity-50" disabled={(optionOne === "" && optionTwo==="") || optionOne === optionTwo}>Submit</button>
         </form>
     );
 }
